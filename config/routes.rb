@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
-  get 'reviews/show'
+  # get 'reviews/show'
 
-  get 'reviews/create'
+  # get 'reviews/create'
 
-  get 'reviews/destroy'
+  # get 'reviews/destroy'
 
-  get 'sessions/new'
+  # get 'sessions/new'
 
-  get 'sessions/create'
+  # get 'sessions/create'
 
-  get 'sessions/destroy'
+  # get 'sessions/destroy'
 
   get 'users/new'
 
