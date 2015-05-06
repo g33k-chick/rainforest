@@ -2,6 +2,9 @@
 <%= link_to "New Product", "/products/new" %>
 <br>
 <br>
+
+<h1><small><%= page_entries_info @products %> </small></h1>
+
 <%= form_tag products_path, method: :get, authentication: false, id: 'search-form' do %>
   <%= text_field_tag :search, params[:search] %>
   <%= submit_tag "Search" %>
@@ -10,7 +13,7 @@
 <div id="products">
   <%= render @products %>
 </div>
-
+<%= paginate @products %>
 <script type="text/javascript">
   function display_search_results() {
     // readyState === 4 means that the asynchronous request completed successfully
