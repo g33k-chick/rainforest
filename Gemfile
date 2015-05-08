@@ -30,6 +30,8 @@ gem 'kaminari'
 
 gem 'faker'
 
+gem 'best_errors'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
